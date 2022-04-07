@@ -1,19 +1,22 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
+  <v-app >
+    <v-main >
+      <Main />
     </v-main>
   </v-app>
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Main,
+    Footer
   },
 
   data: () => ({
@@ -21,3 +24,7 @@ export default {
   }),
 }
 </script>
+
+<style scoped>
+
+</style>
